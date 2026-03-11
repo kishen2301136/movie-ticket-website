@@ -6,65 +6,181 @@
 <style>
 
 body{
-font-family: Arial;
 margin:0;
-background:black;
+font-family:Arial;
+background:#0f0f0f;
 color:white;
+}
+
+header{
+background:#111;
+padding:20px;
 text-align:center;
+font-size:28px;
+font-weight:bold;
 }
 
 nav{
-background:#111;
+background:#1c1c1c;
 padding:15px;
+text-align:center;
 }
 
 nav a{
-color:cyan;
+color:white;
 margin:20px;
-font-size:20px;
 text-decoration:none;
+font-size:18px;
 }
 
 nav a:hover{
-color:yellow;
+color:#ffcc00;
 }
 
 section{
-padding:100px;
-border-bottom:1px solid gray;
+padding:60px;
+text-align:center;
+}
+
+.movies{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#1e1e1e;
+padding:20px;
+border-radius:10px;
+width:200px;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+background:#ffcc00;
+border:none;
+padding:10px 20px;
+margin-top:10px;
+cursor:pointer;
+border-radius:5px;
+}
+
+form{
+background:#1e1e1e;
+padding:30px;
+width:300px;
+margin:auto;
+border-radius:10px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+footer{
+background:#111;
+padding:20px;
+text-align:center;
 }
 
 </style>
-
 </head>
 
 <body>
 
+<header>
+🎬 Movie Ticket Management System
+</header>
+
 <nav>
 <a href="#home">Home</a>
+<a href="#movies">Movies</a>
+<a href="#booking">Book Ticket</a>
 <a href="#about">About</a>
-<a href="#contact">Contact</a>
 </nav>
 
-
 <section id="home">
-<h1>🎬 Movie Ticket Management System</h1>
-<p>Book tickets for the latest movies online.</p>
+<h1>Welcome to Online Movie Booking</h1>
+<p>Book tickets for the latest movies easily.</p>
 </section>
 
+<section id="movies">
+<h1>Now Showing</h1>
+
+<div class="movies">
+
+<div class="card">
+<img src="https://via.placeholder.com/200x300">
+<h3>Avengers</h3>
+<p>Action / Sci-Fi</p>
+<button>Book Now</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200x300">
+<h3>Spider-Man</h3>
+<p>Action / Adventure</p>
+<button>Book Now</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200x300">
+<h3>Batman</h3>
+<p>Action / Thriller</p>
+<button>Book Now</button>
+</div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h1>Book Your Ticket</h1>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<select>
+<option>Select Movie</option>
+<option>Avengers</option>
+<option>Spider-Man</option>
+<option>Batman</option>
+</select>
+
+<select>
+<option>Show Time</option>
+<option>10:00 AM</option>
+<option>2:00 PM</option>
+<option>6:00 PM</option>
+</select>
+
+<input type="number" placeholder="Number of Tickets">
+
+<button type="submit">Book Ticket</button>
+
+</form>
+
+</section>
 
 <section id="about">
 <h1>About</h1>
-<p>This website allows users to view movies and book tickets easily.</p>
+<p>This movie ticket management system allows users to view movies and book tickets online easily.</p>
 </section>
 
-
-<section id="contact">
-<h1>Contact</h1>
-<p>Email: movietickets@gmail.com</p>
-<p>Phone: 9876543210</p>
-</section>
-
+<footer>
+<p>© 2026 Movie Ticket Management System</p>
+</footer>
 
 </body>
 </html>
